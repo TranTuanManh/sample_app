@@ -1,0 +1,19 @@
+<footer class="footer">
+  <small>
+    <%= t(".content",
+      id: link_to(t("link"),
+        "http://www.railstutorial.org/"),
+      name: link_to(t("name"),
+        "http://www.michaelhartl.com/")).html_safe %>
+  </small>
+
+  <nav>
+    <ul>
+      <li><%= link_to(t(".about"), about_path) %></li>
+      <li><%= link_to(t(".contact"), '#') %></li>
+      <li><%= t(".content2",
+        new: link_to(t("news"),
+          "http://news.railstutorial.org/")).html_safe %></li>
+    </ul>
+  </nav>
+</footer>
