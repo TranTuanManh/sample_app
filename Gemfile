@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem "bcrypt", "3.1.11"
 gem "bootstrap-sass", "3.3.7"
 gem "coffee-rails", "~> 4.2"
 gem "eslint-rails"
@@ -18,6 +19,7 @@ gem "rubocop", require: false
 gem "rubocop-checkstyle_formatter", require: false
 gem "sass-rails", "~> 5.0"
 gem "scss_lint", require: false
+gem "therubyracer"
 gem "turbolinks", "~> 5"
 gem "uglifier", ">= 1.3.0"
 
