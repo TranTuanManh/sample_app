@@ -6,6 +6,12 @@ $white: #fff;
 $gray2: #eaeaea;
 $black2: #222;
 $black3: #555;
+$red: #f00;
+$bbb: #bbb;
+
+@mixin box-size {
+  box-sizing: border-box;
+}
 
 // univeral
 body {
@@ -17,7 +23,11 @@ section {
 }
 
 textarea {
+  @include box-size;
+  border: 1px solid $bbb;
+  margin-bottom: 15px;
   resize: vertical;
+  width: 100%;
 }
 
 .center {
@@ -89,5 +99,47 @@ footer {
       float: left;
       margin-left: 15px;
     }
+  }
+}
+
+.debug-dump {
+  @include box-size;
+  clear: both;
+  float: left;
+  margin-top: 45px;
+  width: 100%;
+}
+
+// forms
+
+.uneditable-input {
+  @include box-size;
+  border: 1px solid $bbb;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.input {
+  @include box-size;
+  border: 1px solid $bbb;
+  height: auto;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.error-explanation {
+  color: $red;
+
+  ul {
+    color: $red;
+    margin: 0 0 30px;
+  }
+}
+
+.field-with-errors {
+  @extend .has-error;
+
+  .form-control {
+    color: $state-danger-text;
   }
 }
