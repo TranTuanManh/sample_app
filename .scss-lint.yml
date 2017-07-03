@@ -3,7 +3,13 @@ lscss_files: 'app/assets/stylesheets/**/*.css.scss'
 exclude: 'app/assets/stylesheets/application.css'
 
 linters:
+  SelectorFormat:
+    ignored_names: ["debug_dump"]
+
   BorderZero:
+    enabled: false
+
+  PlaceholderInExtend:
     enabled: false
 
   Indentation:
