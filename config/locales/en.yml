@@ -32,7 +32,9 @@ en:
   home2: "Home"
   help2: "Help"
   log_in: "Log in"
+  log_out: "Log out"
   logo: "Rails logo"
+  sign: "Sign up now!"
   name: "Michael Hartl"
   news: "News"
   male: "male"
@@ -43,7 +45,6 @@ en:
     home: "Home"
     sample_app: "Welcome to the Sample App"
     content: "This is the home page for the %{rort} sample application."
-    sign: "Sign up now!"
 
    help:
     help: "Help"
@@ -59,6 +60,9 @@ en:
   layouts:
     header:
       content: "%{id}"
+      profile: "Profile"
+      settings: "Settings"
+      account: "Account"
 
     footer:
       about: "About"
@@ -83,3 +87,10 @@ en:
     error_messages:
       error: "error"
       contain: "The form contains"
+
+  sessions:
+    create:
+      invalid: "Invalid email/password combination"
+
+    new:
+      new_user: "New user?"
