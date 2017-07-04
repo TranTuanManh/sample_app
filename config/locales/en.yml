@@ -35,6 +35,8 @@ en:
   logo: "Rails logo"
   name: "Michael Hartl"
   news: "News"
+  male: "male"
+  female: "female"
 
   static_pages:
    home:
@@ -77,7 +79,7 @@ en:
     show:
       error: "Cannot find user"
 
-  share:
+  shared:
     error_messages:
       error: "error"
       contain: "The form contains"

@@ -9,6 +9,11 @@
       <%= f.label :name %>
       <%= f.text_field :name, class: "form-control input" %>
 
+      <%= f.label :sex %>
+      <%= f.radio_button :sex, t("male") %> <%= f.label t "male" %>
+      <%= f.radio_button :sex, t("female"), class: "radio-field" %>
+      <%= f.label t "female" %><br>
+
       <%= f.label :email %>
       <%= f.email_field :email, class: "form-control input" %>
 
@@ -16,7 +21,8 @@
       <%= f.password_field :password, class: "form-control input" %>
 
       <%= f.label :password_confirmation, t(".confirm") %>
-      <%= f.password_field :password_confirmation, class: "form-control input" %>
+      <%= f.password_field :password_confirmation,
+        class: "form-control input" %>
 
       <%= f.submit t(".create"), class: "btn btn-primary input" %>
     <% end %>
