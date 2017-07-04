@@ -39,15 +39,15 @@ en:
   news: "News"
   male: "male"
   female: "female"
+  help: "Help"
+  home: "Home"
 
   static_pages:
    home:
-    home: "Home"
     sample_app: "Welcome to the Sample App"
     content: "This is the home page for the %{rort} sample application."
 
    help:
-    help: "Help"
     content: "Get help on the Ruby on Rails Tutorial at the %{help}.
       To get help on this sample app, see the <em>%{book}</em>."
 
@@ -63,6 +63,7 @@ en:
       profile: "Profile"
       settings: "Settings"
       account: "Account"
+      users: "Users"
 
     footer:
       about: "About"
@@ -82,6 +83,25 @@ en:
 
     show:
       error: "Cannot find user"
+
+    edit:
+      edit: "Edit user"
+      savechange: "Save change"
+      change: "Change"
+      login: "Please log in."
+      updateprofile: "Update your profile"
+
+    user:
+      askforsure: "Are you sure?"
+
+    index:
+      allusers: "All users"
+
+    update:
+      profileupd: "Profile updated"
+
+    destroy:
+      delete: "User deleted"
 
   shared:
     error_messages:
