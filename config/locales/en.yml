@@ -63,6 +63,7 @@ en:
       profile: "Profile"
       settings: "Settings"
       account: "Account"
+      users: "Users"
 
     footer:
       about: "About"
@@ -83,6 +84,24 @@ en:
     show:
       error: "Cannot find user"
 
+    edit:
+      edit: "Edit user"
+      savechange: "Save change"
+      change: "Change"
+      login: "Please log in."
+
+    user:
+      askforsure: "Are you sure?"
+
+    index:
+      allusers: "All users"
+
+    update:
+      profileupd: "Profile updated"
+
+    destroy:
+      delete: "User deleted"
+
   shared:
     error_messages:
       error: "error"
@@ -90,7 +109,9 @@ en:
 
   sessions:
     create:
-      invalid: "Invalid email/password combination"
+      email_error: "Email not exist!"
+      password_error: "Password is incorrect"
 
     new:
       new_user: "New user?"
+      remember: "Remember me on this computer"
