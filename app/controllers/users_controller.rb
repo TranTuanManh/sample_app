@@ -11,19 +11,20 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t ".welcome"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t ".checkmail"
+      redirect_to root_url
     else
       render :new
     end
   end
 
   def index
-    @users = User.paginate page: params[:page]
+    @users = User.activated.paginate page: params[:page]
   end
 
   def show
+    redirect_to root_url && return unless @user
   end
 
   def edit
@@ -54,7 +55,7 @@ class UsersController < ApplicationController
   def logged_in_user
     return if logged_in?
     store_location
-    flash[:danger] = t ".login"
+    flash[:danger] = t "login"
     redirect_to login_url
   end
 
@@ -63,7 +64,7 @@ class UsersController < ApplicationController
   end
 
   def correct_user
-    redirect_to root_url unless current_user
+    redirect_to root_url unless @user.current_user? current_user
   end
 
   def find_user

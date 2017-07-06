@@ -41,6 +41,14 @@ en:
   female: "female"
   help: "Help"
   home: "Home"
+  login: "Please log in."
+  acc_activation: "Account activation"
+  greeting: "Hi"
+
+  account_activations:
+    edit:
+      activated: "Account activated!"
+      invalid_activated: "Invalid activation link"
 
   static_pages:
    home:
@@ -79,7 +87,7 @@ en:
       create: "Create my account"
 
     create:
-      welcome: "Welcome to the Sample App!"
+      checkmail: "Please check your email to activate your account."
 
     show:
       error: "Cannot find user"
@@ -88,7 +96,6 @@ en:
       edit: "Edit user"
       savechange: "Save change"
       change: "Change"
-      login: "Please log in."
       updateprofile: "Update your profile"
 
     user:
@@ -112,7 +119,17 @@ en:
     create:
       email_error: "Email not exist!"
       password_error: "Password is incorrect"
+      message: "Account not activated. Check your email for the activation link."
 
     new:
       new_user: "New user?"
       remember: "Remember me on this computer"
+
+  user_mailer:
+    account_activation:
+      activate_request: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
+
+    password_reset:
+      pass_reset: "User#password_reset"
+      find: ", find me in app/views/user_mailer/password_reset.html.erb"

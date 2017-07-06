@@ -29,3 +29,4 @@ config/environments/*.local.yml
 /.framgia-ci-reports
 .framgia-ci-result.temp.yml
 /test/controllers/static_pages_controller_test.rb
+/config/application.yml
