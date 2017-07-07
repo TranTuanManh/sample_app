@@ -1,0 +1,10 @@
+User:
+  validate:
+    password: 6
+    name: 50
+
+Micropost:
+  validate:
+    content: 140
+
+  picture_size: 5

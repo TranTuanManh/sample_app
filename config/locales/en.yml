@@ -89,10 +89,6 @@ en:
       content: "The %{id} by %{name}"
       content2: "%{new}"
 
-    micropost_form:
-       compose: "Compose new micropost..."
-       submit: "Post"
-
     user_info:
       view: "view my profile"
       micropost:
@@ -131,6 +127,10 @@ en:
     error_messages:
       error: "error"
       contain: "The form contains"
+
+    micropost_form:
+      compose: "Compose new micropost..."
+      submit: "Post"
 
     user_info:
       view: "view my profile"

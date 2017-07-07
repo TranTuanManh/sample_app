@@ -9,12 +9,13 @@ class User < ApplicationRecord
     presence: true,
     uniqueness: {case_sensitive: false},
     length: {maximum: 255}
-  validates :password, presence: true, length: {minimum: 6},
+  validates :password, presence: true, length: {minimum: Settings.User.validate.password},
     allow_nil: true, on: :create
-  validates :name, presence: true, length: {maximum: 50}
+  validates :name, presence: true, length: {maximum: Settings.User.validate.name}
   validates :sex, presence: true
 
   has_secure_password
+  has_many :microposts, dependent: :destroy
 
   before_create :create_activation_digest
   before_save :email_downcase
@@ -76,6 +77,10 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at < 2.hours.ago
+  end
+
+  def feed
+    microposts
   end
 
   private
