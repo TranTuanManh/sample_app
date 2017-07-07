@@ -51,6 +51,8 @@ en:
     %{link_pass_reset} This link will expire in two hours. If you did not
     request your password to be reset, please ignore this email
     and your password will stay as it is."
+  image_size: "should be less than 5MB"
+  askforsure: "Are you sure?"
 
   account_activations:
     edit:
@@ -61,6 +63,7 @@ en:
    home:
     sample_app: "Welcome to the Sample App"
     content: "This is the home page for the %{rort} sample application."
+    feed: "Micropost Feed"
 
    help:
     content: "Get help on the Ruby on Rails Tutorial at the %{help}.
@@ -86,6 +89,16 @@ en:
       content: "The %{id} by %{name}"
       content2: "%{new}"
 
+    micropost_form:
+       compose: "Compose new micropost..."
+       submit: "Post"
+
+    user_info:
+      view: "view my profile"
+      micropost:
+      one: "%{count} micropost"
+      other: "%{count} microposts"
+
   users:
     new:
       signup: "Sign up"
@@ -97,15 +110,13 @@ en:
 
     show:
       error: "Cannot find user"
+      microposts: "Microposts"
 
     edit:
       edit: "Edit user"
       savechange: "Save change"
       change: "Change"
       updateprofile: "Update your profile"
-
-    user:
-      askforsure: "Are you sure?"
 
     index:
       allusers: "All users"
@@ -120,6 +131,10 @@ en:
     error_messages:
       error: "error"
       contain: "The form contains"
+
+    user_info:
+      view: "view my profile"
+      micropost: "micropost"
 
   sessions:
     create:
@@ -158,3 +173,17 @@ en:
 
     new:
       submit: "Submit"
+
+  microposts:
+    create:
+      success: "Micropost created!"
+
+    destroy:
+      success: "Micropost deleted"
+
+    micropost:
+      time_ago: "Posted %{time} ago."
+
+  java:
+    alert:
+      picture_size: "Maximum file size is 5MB. Please choose a smaller file."

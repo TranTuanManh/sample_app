@@ -30,3 +30,6 @@ config/environments/*.local.yml
 .framgia-ci-result.temp.yml
 /test/controllers/static_pages_controller_test.rb
 /config/application.yml
+/public/uploads
+public/javascripts/translations.js
+public/javascripts/i18n.js
