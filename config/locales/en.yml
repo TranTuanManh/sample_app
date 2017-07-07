@@ -53,6 +53,10 @@ en:
     and your password will stay as it is."
   image_size: "should be less than 5MB"
   askforsure: "Are you sure?"
+  following: "Following"
+  followers: "Followers"
+  follow: "Follow"
+  unfollow: "Unfollow"
 
   account_activations:
     edit:
@@ -123,10 +127,20 @@ en:
     destroy:
       delete: "User deleted"
 
+    show_follow:
+      view: "view my profile"
+      mircopost: "Microposts:"
+
   shared:
     error_messages:
       error: "error"
       contain: "The form contains"
+
+    stats:
+      following: "<strong id='following' class='stat'>%{count}
+        </strong> following"
+      follower: "<strong id='followers' class='stat'>%{count}
+        </strong> followers"
 
     micropost_form:
       compose: "Compose new micropost..."
